@@ -24,32 +24,28 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron . APP_DEV=true",
     "start:prod": "electron . APP_DEV=false",
-    "deploy":      "electron-builder build --publish never",
-
-    "build":       "electron-builder build --config=electron-builder.yml --publish never && npm run build:rename",
+    "deploy": "electron-builder build --publish never",
+    "build": "electron-builder build --config=electron-builder.yml --publish never && npm run build:rename",
     "build:win32": "electron-builder build --config=electron-builder.yml --publish never --win --ia32 && npm run build:rename",
-    "build:win":   "electron-builder build --config=electron-builder.yml --publish never --win --x64 && npm run build:rename",
+    "build:win": "electron-builder build --config=electron-builder.yml --publish never --win --x64 && npm run build:rename",
     "build:linux": "electron-builder build --config=electron-builder.yml --publish never --linux && npm run build:rename",
-    "build:all":   "electron-builder build --config=electron-builder.yml --publish never --win --linux --mac && npm run build:rename",
-
+    "build:all": "electron-builder build --config=electron-builder.yml --publish never --win --linux --mac && npm run build:rename",
     "build:win32:publish": "electron-builder build --config=electron-builder.yml --publish always --win --ia32 && npm run build:rename",
-    "build:win:publish":   "electron-builder build --config=electron-builder.ymlnp --publish always --win --x64 && npm run build:rename",
+    "build:win:publish": "electron-builder build --config=electron-builder.ymlnp --publish always --win --x64 && npm run build:rename",
     "build:linux:publish": "electron-builder build --config=electron-builder.yml --publish always --linux && npm run build:rename",
-    "build:all:publish":   "electron-builder build --config=electron-builder.yml --publish always --win --linux --mac && npm run build:rename",
-
+    "build:all:publish": "electron-builder build --config=electron-builder.yml --publish always --win --linux --mac && npm run build:rename",
     "build:rename": "node afterPackRenameFiles.js"
-
   },
   "license": "MIT",
   "devDependencies": {
-    "electron": "^15.0.0",
-    "electron-builder": "^22.11.7"
+    "electron": "^32.0.1",
+    "electron-builder": "^24.13.3"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
     "electron-dl": "^3.2.1",
     "electron-is-dev": "^2.0.0",
-    "electron-updater": "^4.3.9",
+    "electron-updater": "^6.3.4",
     "latest-stable-version": "^1.0.1"
   },
   "build": {

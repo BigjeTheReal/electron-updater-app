@@ -14,8 +14,8 @@ publish:
   provider: github
   owner: BigjeTheReal
   repo: electron-updater-app
-  token: [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]
-  # vPrefixedTagName: true
+  token: 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
+  #vPrefixedTagName: true
 nsis:
   shortcutName: ${productName}
   artifactName: ${name}-${version}.${ext}
