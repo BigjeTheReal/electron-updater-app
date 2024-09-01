@@ -1,0 +1,8 @@
+trash
+node_modules
+dist
+
+.env
+package-lock.json
+
+electron-builder.yml
